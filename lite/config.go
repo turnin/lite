@@ -27,7 +27,6 @@ var conf config
 func Load(configPath string) error {
 	configData, _ := ioutil.ReadFile(configPath)
 
-	fmt.Println(configData)
 	_, err := toml.Decode(string(configData), &conf)
 	if err != nil {
 		log.Println(err)
