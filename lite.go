@@ -19,7 +19,7 @@ func main() {
 		cli.StringFlag{
 			Name:  "config, c",
 			Usage: "Load configuration from `FILE`",
-			Value: "config.yaml",
+			Value: "config.toml",
 		},
 	}
 
